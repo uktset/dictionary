@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>Dictionary - शब्दकोश</title>
+    <title>Hindi Dictionary</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/blog/">
 
@@ -64,7 +64,7 @@
                                 <tr>
                                     <td>{{ word.get('word') }}</td>
                                     <td>{{ meaning.get('partOfSpeech') }}</td>
-                                    <td>{{ word.get('origin', '-') }}</td>
+                                    <td>{{ word.get('origin', 'There is no origin to display') }}</td>
 
                                     <td>
                                             {% for definition in meaning.get('definitions') %}
